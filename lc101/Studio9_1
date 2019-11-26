@@ -1,0 +1,39 @@
+
+const launchOutput = require('../launchCodeRocks.js');
+const assert = require('assert');
+
+describe("launchOutput", function(){
+
+it("Division by 2,3 and 5", function(){
+      let output = launchOutput(30);
+      assert.strictEqual(output, "LaunchCode Rocks!");
+   });
+it("Division by 2 and 5", function(){
+      let output = launchOutput(10);
+      assert.strictEqual(output,"Launch Rocks!");
+   });
+
+it("Division by 2 and 3", function(){
+      let output = launchOutput(6);
+      assert.strictEqual(output,"LaunchCode!");
+   });
+
+  it("Division by 2", function(){
+      let output = launchOutput(4);
+      assert.strictEqual(output, "Launch!");
+   });
+
+ it("Division by 3", function(){
+      let output = launchOutput(9);
+      assert.strictEqual(output, "Code!");
+   });
+    it("Division by 5", function(){
+      let output = launchOutput(25);
+      assert.strictEqual(output, "Rocks!");
+   });
+
+   it("Not Divided by 2,3 and 5", function(){
+      let output = launchOutput(7);
+      assert.strictEqual(output, "Rutabagas! That doesn't work.");
+  });
+});

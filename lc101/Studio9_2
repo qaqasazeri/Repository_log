@@ -1,0 +1,30 @@
+function launchOutput(num){
+  //
+if(num%2===0&&num%3===0&&num%5===0)//1
+    return "LaunchCode Rocks!";
+
+else if(num%2===0&&num%5===0)//2
+    return "Launch Rocks!";
+
+else if (num%3===0&&num%5===0)//3
+    return "Code Rocks!";
+
+else if(num%2===0&&num%3===0)//4
+    return "LaunchCode!";
+
+else if(num%5===0){//5
+    return "Rocks!";
+  }
+
+else if(num%3===0){//6
+    return "Code!";
+  }
+
+else if(num%2===0){//7
+    return "Launch!";
+  }
+  
+  return "Rutabagas! That doesn't work.";
+}
+
+module.exports = launchOutput;

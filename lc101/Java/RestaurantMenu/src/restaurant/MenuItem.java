@@ -20,10 +20,12 @@ public class MenuItem {
         this.category = category;
         this.description = description;
         this.isNew = isNew;
-    }
+   }
 @Override
     public String toString() {
         return "name: " +this.name + "; description:(" + this.description + ")" +
                 "; price: $"+this.price + "; category: "+this.category+ "; new item: "+isNew;
     }
+
+
 }
